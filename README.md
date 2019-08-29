@@ -17,3 +17,7 @@ Branched and checked out 'problem4'
 Did problem 4. Seems very much like problem 3. Noticed that in the original setup, the argument that was given to the function was the same name as the function, rather than the testArray that it was clearly meant to be fed. Probably done that way on purpose, probably an attempt to throw people off and give them a hard time.
 Problem 4 works.
 
+Branched and checked out 'problem5'
+Just like problem 4, this calls upon the same things learned in problem 3. This was almost identical to problem 4. Nothing learned doing this problem, but I would say that what was done in the previous problems was further commited to memory, and I felt very comfortable doing this one.
+Oh and problem 5 works.
+
