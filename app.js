@@ -37,11 +37,18 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-  let product = a * b;
-  let string = `The product of ${a} and ${b} is ${product}.`;
-  return [product, string];
+function multiply(one, two){
+    var oneTwo = one * two;
+    var output = `The product of ${one} and ${two} is ${oneTwo}.`;
+    return [oneTwo, output];
 }
+
+    // The function below is the one we made in class. I'm choosing to do this again on my own without referencing it, for additional practice.
+    // function multiply(a, b) { //eslint-disable-line
+    // let product = a * b;
+    // let string = `The product of ${a} and ${b} is ${product}.`;
+    // return [product, string];
+    // }
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
