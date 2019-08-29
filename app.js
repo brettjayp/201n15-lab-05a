@@ -8,11 +8,20 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
-  var totalSum = a + b;
-  var string = `The sum of ${a} and ${b} is ${totalSum}.`;
-  return [totalSum, string];
+function sum(one, two){
+    var oneTwo = one + two;
+    // The line below is my original attempt. It worked, but was not the efficient way of writing it, like we did in class. I'm keeping it in for historical purposes, but will rewrite it better.
+    // var output = 'The sum of ' + one + ' and ' + two + ' is ' + oneTwo + '.';
+    var output = `The sum of ${one} and ${two} is ${oneTwo}.`
+    return [oneTwo, output];
 }
+
+    // The function below is the one we made in class. I'm choosing to do this again on my own without referencing it, for additional practice.
+    // function sum(a, b) { //eslint-disable-line
+    //   var totalSum = a + b;
+    //   var string = `The sum of ${a} and ${b} is ${totalSum}.`;
+    //   return [totalSum, string];
+    // }
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
