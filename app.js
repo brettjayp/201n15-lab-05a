@@ -68,11 +68,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+        // The lines below are how I originally did this problem. I did it this way first simply to establish that the function will work. Keeping for history.
+        // var sum = a + b + c;
+        // var product = a * b * c;
+    var sumabc = sum(a, sum(b, c)[0])[0];
+    var productabc = multiply(a, multiply(b, c)[0])[0];
+    var sumString = `${a} and ${b} and ${c} sum to ${sumabc}.`;
+    var productString = `The product of ${a} and ${b} and ${c} is ${productabc}.`;
+    return [sumabc, productabc, sumString, productString];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -149,6 +156,6 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyAnyArray(testDynamicArray);
+// testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
